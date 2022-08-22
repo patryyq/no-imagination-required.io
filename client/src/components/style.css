@@ -1,0 +1,54 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+    min-height: calc(100% - 131px);
+  }
+  
+.markLabel {
+  right: 36px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: auto;
+  height:auto;
+}
+
+body {
+  overscroll-behavior-y: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  color: black;
+}
+
+.fps {
+position: absolute;
+bottom: 1rem;
+font-weight: bold;
+left: 1rem;
+color: #000;
+}
+
+.obInfo {
+  background: #fcfcfc;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+#root {
+  width:100%;
+}

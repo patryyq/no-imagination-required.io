@@ -1,0 +1,57 @@
+{
+  "name": "no-imagination-required",
+  "version": "1.0.0",
+  "description": "Final year project for Web Programming and Cyber Security undegraduate course. The project is a web-based application, enabling collaboration in a 3D space. Using either own or default available models, create 3D scenes - visualise the arrangement of objects in a particular space (garden, warehouse etc.)",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm i",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"cd client && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patryyq/no-imagination-required.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patryyq/no-imagination-required/issues"
+  },
+  "homepage": "https://github.com/patryyq/no-imagination-required#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.54.0",
+    "aws-sdk": "^2.1092.0",
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "google-auth-library": "^7.12.0",
+    "http-proxy-middleware": "^2.0.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-s3": "^2.10.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "sharp": "^0.30.3",
+    "uuid": "^8.3.2",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1"
+  }
+}

@@ -1,0 +1,74 @@
+.root {
+  z-index: 1304;
+}
+
+.list {
+  width: 270px;
+}
+
+.fullList {
+  width: auto;
+}
+
+.invisButton {
+  opacity: 0;
+  z-index: 3503;
+  pointer-events: auto;
+  position: fixed;
+  width: 4rem;
+  right: 1.2rem;
+  top: 0.75rem;
+  height: 4rem;
+}
+
+.buttonHitbox {
+  opacity: 0;
+  z-index: 3503;
+  pointer-events: auto;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+}
+
+.cBlack {
+  color: #000000;
+  font-size: 30px
+}
+
+.cGreen {
+  color: #46ab07;
+  font-size: 30px
+}
+
+.cRed {
+  color: #fb0c0c;
+  font-size: 30px
+}
+
+.cBlue {
+  color: #0054fb;
+  font-size: 30px
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.profileImg {
+  width: 62px;
+  height: 62px;
+  border-radius: 100px;
+  padding: 14px;
+}
+
+.imgMenuWrap {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}

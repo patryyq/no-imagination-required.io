@@ -1,0 +1,289 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.cnt {
+  width: 200%;
+  height: 200%;
+  padding: 100%;
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-image: linear-gradient(to bottom, #123ead 40%, #72056e 60%);
+  border-radius: 50%;
+  /* background-image: linear-gradient(to right, #205eff 10%, #c238bd 70%); */
+  transition: opacity ease-in 4s;
+  pointer-events: none;
+  touch-action: none;
+  animation: spin 35s linear infinite;
+  -moz-animation: spin 35s linear infinite;
+  -webkit-animation: spin 35s linear infinite;
+  -ms-animation: spin 55s linear infinite;
+
+}
+
+@keyframes spin {
+  from {
+    transform: scale3d(2, 2, 1) rotateZ(0deg);
+  }
+
+  to {
+    transform: scale3d(2, 2, 1) rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: scale3d(2, 2, 1) rotateZ(0deg);
+  }
+
+  to {
+    -moz-transform: scale3d(2, 2, 1) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: scale3d(2, 2, 1) rotateZ(0deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(2, 2, 1) rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: scale3d(2, 2, 1) rotateZ(0deg);
+  }
+
+  to {
+    -ms-transform: scale3d(2, 2, 1) rotateZ(360deg);
+  }
+}
+
+@keyframes blink {
+  100% {
+    color: transparent
+  }
+}
+
+.loader__dot {
+  animation: 2s blink infinite
+}
+
+.loader__dot:nth-child(2) {
+  animation-delay: 500ms
+}
+
+.loader__dot:nth-child(3) {
+  animation-delay: 1s
+}
+
+.content {
+  pointer-events: none;
+  touch-action: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.main2 img {
+  box-sizing: border-box;
+  touch-action: none;
+  max-width: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+.main1, .main2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 5vw;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.main1 h1,
+.main1 p {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14vw;
+  transition: opacity ease-in 2.5s;
+}
+
+.main1 h1 {
+  margin-top: 5vh;
+  font-weight: 400;
+  color: #000;
+}
+
+.main1 p {
+  text-decoration: none;
+  font-size: 10vw;
+  font-weight: 400;
+  color: #fff;
+  transition: opacity ease-in 2.5s;
+  margin: 2vh 0 7vh 0;
+}
+
+.main2 {
+  transition: opacity ease-in 2.5s;
+}
+
+.main3 {
+  transition: opacity ease-in 1s;
+}
+
+
+.main3 button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 7vw auto 7vw auto;
+  font-size: 17px;
+  max-width: 250px;
+  width: 75%;
+  border-radius: 25px;
+  padding: 8px 0px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 530px) {
+  .main1 h1 {
+
+    font-size: 10vw;
+  }
+
+  .main1 p {
+    margin-top: 6vw;
+    font-size: 6vw;
+  }
+
+  .main2 img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .main2 img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+
+  .cnt {
+    background-image: linear-gradient(to right, #123ead 20%, #72056e 70%);
+  }
+
+  .main1 h1 {
+    margin-top: 3vw;
+    font-size: 9vw;
+  }
+
+  .main1 p {
+    margin-top: 10px;
+    font-size: 6vw;
+  }
+
+
+  .main3 button {
+    margin: 4vw auto;
+  }
+
+  .main2 img {
+    width: 40%;
+  }
+
+
+}
+
+@media screen and (min-width: 1220px) {
+  .content {
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .main1, .main2 {
+    display: inline-block;
+  }
+
+  .main1 {
+    text-align: left;
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+
+  }
+
+  .main2 {
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  .main1 h1 {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main1 p {
+    font-size: 5vw;
+    font-weight: 400;
+    margin-left: 4px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .main2 img {
+    width: 70%;
+    border-radius: 50%;
+    border: 10px solid #fffcf3;
+  }
+
+  .main3 {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+  }
+
+  .main3 button {
+    display: inline-block;
+    margin: 2vw 1vw;
+  }
+}
